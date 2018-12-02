@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void build_tree(vector<int> &sec, vector<int> &a, int v, int tl, int tr) {
+void build_tree(vector<long long int> &sec, vector<int> &a, int v, int tl, int tr) {
     if (tl == tr)
         sec[v] = a[tl];
     else {
@@ -18,7 +18,7 @@ void build_tree(vector<int> &sec, vector<int> &a, int v, int tl, int tr) {
     }
 }
 
-int sum_tree (vector<int> &sec, int v, int tl, int tr, int l, int r) {
+long long int sum_tree (vector<long long int> &sec, int v, int tl, int tr, int l, int r) {
     if (l > r)
         return 0;
     if (l == tl && r == tr)
@@ -28,7 +28,7 @@ int sum_tree (vector<int> &sec, int v, int tl, int tr, int l, int r) {
            + sum_tree (sec, (v << 1) + 1, tm + 1, tr, max(l, tm + 1), r);
 }
 
-void update_tree (vector<int> &sec, int v, int tl, int tr, int pos, int new_val) {
+void update_tree (vector<long long int> &sec, int v, int tl, int tr, int pos, long long int new_val) {
     while (tl != tr) {
         int tm = (tl + tr) >> 1;
         if (pos <= tm) {
@@ -56,7 +56,7 @@ int main()
     int N, M;
     cin >> N >> M;
     vector<int> v(N);
-    vector<int> sections(4 * N);
+    vector<long long int> sections(4 * N);
     for (int i = 0; i < N; i++) {
         int x;
         scanf("%d", &x);
