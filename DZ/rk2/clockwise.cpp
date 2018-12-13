@@ -1,3 +1,4 @@
+// Не решенная до конца задача, не получил за нее полный бал
 #include <iostream>
 #include <algorithm>
 #include <string>

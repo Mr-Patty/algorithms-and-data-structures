@@ -1,10 +1,12 @@
+// это не решенная задача, алгоритм правильный, но нужны исправления
+// Кажется должна сработать замена vector<vector<int> > на vector<vector<bool> >
 #include <iostream>
 #include <cstdio>
 #include <vector>
 #include <stdio.h>
 #include <climits>
 #include <algorithm>
-#include <cmath>
+#include <cmath>ж
 
 using namespace::std;
 

@@ -1,3 +1,4 @@
+// Эта задача не решена до конца
 #include <iostream>
 #include <random>
 #include <fstream>

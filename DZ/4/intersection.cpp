@@ -1,3 +1,4 @@
+// Задача не решена, не заходила по времни -> нужна оптимизация или другой алгоритм
 #include <iostream>
 #include <cstring>
 #include <cstdio>
